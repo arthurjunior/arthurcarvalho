@@ -1,13 +1,13 @@
-import { SpanTitle } from "./styles";
+import { ContainerTitle, IntroTextH1, IntroTextH2, IntroTextP } from "./styles";
 
 export default function Title() {
   return (
     <>
-      <SpanTitle>L</SpanTitle>
-      <SpanTitle>L</SpanTitle>
-      <SpanTitle>i</SpanTitle>
-      <SpanTitle>n</SpanTitle>
-      <SpanTitle>k</SpanTitle>
+      <ContainerTitle>
+        <IntroTextP>Olá,👋🏻 o meu nome é</IntroTextP>
+        <IntroTextH1>Lucas Santana</IntroTextH1>
+        <IntroTextH2>Desenvolvedor Front-End</IntroTextH2>
+      </ContainerTitle>
     </>
   );
 }

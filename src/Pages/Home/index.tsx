@@ -9,6 +9,7 @@ import {
 } from "./styles";
 
 import imgSkater from "../../assets/images/LogoBanner.svg";
+import Title from "../../components/Title";
 
 export default function Home() {
   return (
@@ -26,6 +27,8 @@ export default function Home() {
         <LogoSkater>
           <img src={imgSkater} alt="" />
         </LogoSkater>
+
+        <Title/>
       </HomerContainer>
     </>
   );
