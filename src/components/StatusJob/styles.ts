@@ -4,11 +4,16 @@ export const StatusContainer = styled.div`
   max-width: 60rem;
   overflow: hidden;
   display: flex;
+  align-items: center;
   justify-content: flex-start;
   overflow: hidden;
   width: 36.6rem;
   height: 2rem;
   border-radius: 10rem;
+  padding: 1.6rem;
+  position: absolute;
+  top: 0.8rem;
+  z-index: 4;
 
   @keyframes marquee-animation {
     0% {
@@ -18,6 +23,11 @@ export const StatusContainer = styled.div`
     100% {
       transform: translate(-100%);
     }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    border: 1px solid #fff;
   }
 `;
 
