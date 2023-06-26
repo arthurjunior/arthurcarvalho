@@ -10,6 +10,7 @@ import {
 
 import imgSkater from "../../assets/images/LogoBanner.svg";
 import Title from "../../components/Title";
+import Social from "../../components/Social";
 
 export default function Home() {
   return (
@@ -29,6 +30,8 @@ export default function Home() {
         </LogoSkater>
 
         <Title/>
+
+        <Social/>
       </HomerContainer>
     </>
   );

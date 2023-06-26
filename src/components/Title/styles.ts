@@ -24,6 +24,7 @@ export const IntroTextH2 = styled.h2`
   color: #d9d9d9;
   font-size: 3rem;
   position: relative;
+  z-index: -1;
 
   &::before {
     content: "";
