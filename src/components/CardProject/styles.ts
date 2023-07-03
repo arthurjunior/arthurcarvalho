@@ -6,8 +6,8 @@ export const CardContainer = styled.div`
   justify-content: center;
   max-width: 45.4rem;
 
-  &:hover .mobile
-   {
+  cursor: pointer;
+  &:hover .mobile {
     opacity: 1;
   }
 
@@ -24,11 +24,15 @@ export const CardContent = styled.div`
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(13.5px);
-  box-shadow: 0 8px 32px 0 rgba(38, 35, 56, 0.9);
-  -webkit-backdrop-filter: blur(13.5px);
-  border-radius: 10px;
+  /* backdrop-filter: blur(13.5px); */
+  /* box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.3); */
+  /* -webkit-backdrop-filter: blur(13.5px); */
+  border-radius: 13px;
   border: 2px solid rgb(38, 35, 56);
+
+  &:hover {
+    border: 2px solid rgba(84, 59, 163);
+  }
 `;
 export const TabletContainer = styled.div`
   opacity: 0;
@@ -51,24 +55,10 @@ export const MobileContainer = styled.div`
   }
 `;
 
-export const ContainerSpan = styled.span`
-  display: inline-block;
-  overflow: hidden;
-  width: initial;
-  height: initial;
-  background: none;
-  opacity: 1;
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  max-width: 100%;
-`;
-
 export const TitleProject = styled.span`
   position: absolute;
-  padding: 0px 1rem 2.2rem;
-  bottom: 0px;
+  padding: 0px 1.6rem 3.5rem;
+  bottom: 0rem;
   height: 100%;
   width: 100%;
   display: flex;
@@ -79,16 +69,51 @@ export const TitleProject = styled.span`
   background: linear-gradient(rgba(0, 0, 0, 0) -60%, rgb(8, 2, 5));
   opacity: 0;
   transition: all 0.4s ease-in-out 0s;
-
+  border-radius: 10px;
   > h2 {
     font-size: 3rem;
     font-weight: 900;
-    color:
+    color: #8485f6;
   }
 
   > span {
     font-size: 1.9rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
+    color: #fff;
+  }
+`;
+
+export const Tags = styled.div`
+  display: flex;
+  gap: 0.9rem;
+`;
+
+export const TagSpan = styled.span`
+  box-sizing: border-box;
+  display: block;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  max-width: 3.2rem;
+
+  > img {
+    display: block;
+    max-width: 100%;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  &:hover img {
+    opacity: 0.55;
   }
 `;

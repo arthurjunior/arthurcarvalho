@@ -35,7 +35,7 @@ export const IconSocial = styled.a`
     position: absolute;
     width: 8rem;
     font-size: 1rem;
-    background-color: #09090b;
+    background-color: #8485f6;
     color: rgb(255, 255, 255);
     padding: 0.3rem;
     text-align: center;

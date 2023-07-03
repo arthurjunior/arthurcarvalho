@@ -28,7 +28,7 @@ export default createGlobalStyle`
     background-color: rgb(82, 82, 224);}
   body {
     height: 100rem;
-    background: #1e1e25;
+    background: #09090b;
   }
 
   a {
