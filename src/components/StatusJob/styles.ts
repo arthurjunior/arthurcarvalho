@@ -29,6 +29,9 @@ export const StatusContainer = styled.div`
     transform: scale(1.05);
     border: 1px solid #fff;
   }
+  @media (max-width: 995px) {
+    display:none;
+  }
 `;
 
 export const StatusMessage = styled.div`
@@ -54,6 +57,6 @@ export const StatusIcon = styled.div`
 
 export const StatusTitle = styled.span`
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #fff;
 `;

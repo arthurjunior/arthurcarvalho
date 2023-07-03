@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const ContainerSocials = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-top: 1.7rem;
   gap: 1.6rem;
-  position: absolute;
+  /* position: absolute;
   top: 42rem;
-  left: 10rem;
+  left: 10rem; */
 
   > a:first-child::after {
     content: "Baixar Currículo";
@@ -18,6 +19,10 @@ export const ContainerSocials = styled.nav`
 
   > a:last-child::after {
     content: "Meu Linkedin";
+  }
+
+  @media (max-width: 995px) {
+    justify-content: flex-start;
   }
 `;
 
@@ -58,5 +63,12 @@ export const IconSocial = styled.a`
   &:hover > img {
     opacity: 1;
     transform: scale(1.2);
+  }
+
+  @media (max-width: 995px) {
+    img {
+      height: 3.3rem;
+      opacity: 1;
+    }
   }
 `;

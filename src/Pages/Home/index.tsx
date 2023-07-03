@@ -1,38 +1,29 @@
 import Menu from "../../components/Menu";
 import StatusJob from "../../components/StatusJob";
-import {
-  Header,
-  Banner,
-  ContainerStatus,
-  HomerContainer,
-  LogoSkater,
-} from "./styles";
-
+import { ContainerStatus, HomeContainer, LogoSkater } from "./styles";
 import imgSkater from "../../assets/images/LogoBanner.svg";
 import Title from "../../components/Title";
-import Social from "../../components/Social";
+import StarsCanvas from "../../components/Stars";
+import CardProject from "../../components/CardProject";
 
 export default function Home() {
   return (
     <>
-      <HomerContainer>
-        <Banner>
-          <ContainerStatus>
-            <StatusJob />
-          </ContainerStatus>
+    <HomeContainer>
+      <StarsCanvas />
+      <ContainerStatus>
+        <StatusJob />
+      </ContainerStatus>
 
-          <Header>
-            <Menu />
-          </Header>
-        </Banner>
-        <LogoSkater>
-          <img src={imgSkater} alt="" />
-        </LogoSkater>
+      <Menu />
 
-        <Title/>
+      <Title />
 
-        <Social/>
-      </HomerContainer>
+      <LogoSkater >
+        <img src={imgSkater} alt="" />
+      </LogoSkater>
+      </HomeContainer>
+      <CardProject/>
     </>
   );
 }

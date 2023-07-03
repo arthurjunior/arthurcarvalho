@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   display: flex;
   gap: 2rem;
+
+  > a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 994px) {
+    display: none;
+  }
 `;
 
 export const Li = styled.li`
@@ -22,6 +30,6 @@ export const Li = styled.li`
 
   &:hover {
     background-color: #18181b;
-    color: #7b73e5;
+    color: #8485f6 ;
   }
 `;
