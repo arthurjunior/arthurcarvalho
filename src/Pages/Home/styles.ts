@@ -53,3 +53,5 @@ export const LogoSkater = styled.div`
 export const HomeContainer = styled.div`
   height: 100vh;
 `
+
+export const ContainerAbout = styled.div
