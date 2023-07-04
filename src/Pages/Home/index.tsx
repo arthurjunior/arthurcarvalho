@@ -4,26 +4,25 @@ import { ContainerStatus, HomeContainer, LogoSkater } from "./styles";
 import imgSkater from "../../assets/images/LogoBanner.svg";
 import Title from "../../components/Title";
 import StarsCanvas from "../../components/Stars";
+import CardAbout from "../../components/CardAbout";
 
 export default function Home() {
   return (
     <>
-    <HomeContainer>
-      <StarsCanvas />
-      <ContainerStatus>
-        <StatusJob />
-      </ContainerStatus>
-
-      <Menu />
-
-      <Title />
-
-      <LogoSkater >
-        <img src={imgSkater} alt="" />
-      </LogoSkater>
+      <StarsCanvas/>
+      <HomeContainer>
+        <ContainerStatus>
+          <StatusJob />
+        </ContainerStatus>
+        <Menu />
+        <Title />
+        <LogoSkater>
+          <img src={imgSkater} alt="" />
+        </LogoSkater>
       </HomeContainer>
 
-    
+      <CardAbout/>
+      
     </>
   );
 }

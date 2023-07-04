@@ -12,11 +12,10 @@ export const LogoSkater = styled.div`
   right: 25rem;
   transition: all 0.3ms linear;
   animation: animationLoad 3s, ImgAnimation 3s infinite linear;
-  
+
   > img {
     width: 25rem;
   }
-
 
   @keyframes animationLoad {
     0% {
@@ -34,13 +33,9 @@ export const LogoSkater = styled.div`
     }
     50% {
       transform: translateY(20px);
-
-      
     }
     100% {
       transform: translateY(-20px);
-
-      
     }
   }
 
@@ -50,8 +45,15 @@ export const LogoSkater = styled.div`
   }
 `;
 
-export const HomeContainer = styled.div`
-  height: 100vh;
-`
+export const HomeContainer = styled.section`
+  height: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-export const ContainerAbout = styled.div
+  @media (max-width: 995px) {
+    display: block;
+  }
+`;
+
+

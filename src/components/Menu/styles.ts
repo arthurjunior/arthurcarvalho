@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MenuContainer = styled.div`
+export const MenuContainer = styled.header`
   display: flex;
   height: 10rem;
   align-items: center;
