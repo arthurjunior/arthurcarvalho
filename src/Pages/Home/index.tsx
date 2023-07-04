@@ -4,7 +4,6 @@ import { ContainerStatus, HomeContainer, LogoSkater } from "./styles";
 import imgSkater from "../../assets/images/LogoBanner.svg";
 import Title from "../../components/Title";
 import StarsCanvas from "../../components/Stars";
-import CardProject from "../../components/CardProject";
 
 export default function Home() {
   return (
@@ -23,7 +22,8 @@ export default function Home() {
         <img src={imgSkater} alt="" />
       </LogoSkater>
       </HomeContainer>
-      <CardProject/>
+
+    
     </>
   );
 }

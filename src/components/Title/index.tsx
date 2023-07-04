@@ -1,5 +1,6 @@
 import Social from "../Social";
 import {
+  ButtonPrimary,
   ContainerMobile,
   ContainerTitle,
   IntroTextH1,
@@ -7,6 +8,11 @@ import {
   IntroTextP,
 } from "./styles";
 import Typewriter from "typewriter-effect";
+import { Link } from "react-router-dom";
+import { FiArrowRight } from 'react-icons/fi'
+
+
+
 export default function Title() {
   return (
     <>
@@ -17,7 +23,7 @@ export default function Title() {
           <IntroTextH2>
             <Typewriter
               options={{
-                strings: ["Front-end Developer", "React Specialist", "React Specialist"],
+                strings: ["Front-end Developer", "React Specialist", "Next Specialist"],
                 autoStart: true,
                 loop: true,
                 skipAddStyles: true,
@@ -25,6 +31,17 @@ export default function Title() {
             />
           </IntroTextH2>
           <Social/>
+
+          <div className="button">
+              <ButtonPrimary>
+                <Link to="/projetos">
+                  <span>
+                    <b>Conheça meu portfólio</b>
+                    <FiArrowRight style={{ marginBottom: '-0.48rem' }} size={20} />
+                  </span>
+                </Link>
+              </ButtonPrimary>
+          </div>
         </ContainerTitle>
       </ContainerMobile>
     </>
