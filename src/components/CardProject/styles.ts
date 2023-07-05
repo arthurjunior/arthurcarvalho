@@ -5,14 +5,15 @@ export const CardContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 45.4rem;
-
+  transition: display  0.4s ease-in-out 0s;
   cursor: pointer;
-  &:hover .mobile {
-    display: block;
-  }
-
   &:hover .titleProject {
     opacity: 1;
+  }
+  @media (min-width: 995px) {
+    &:hover .mobile {
+      display: block;
+    }
   }
 `;
 export const CardContent = styled.div`
@@ -24,11 +25,13 @@ export const CardContent = styled.div`
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* backdrop-filter: blur(13.5px); */
-  /* box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.3); */
-  /* -webkit-backdrop-filter: blur(13.5px); */
   border-radius: 13px;
   border: 2px solid rgb(38, 35, 56);
+
+  @media (max-width: 995px) {
+    width: 33.9rem;
+    height: 17rem;
+  }
 
   &:hover {
     border: 2px solid rgba(84, 59, 163);
@@ -43,6 +46,10 @@ export const TabletContainer = styled.div`
     left: 29.5rem;
     top: 0.6rem;
     width: 15rem;
+  }
+
+  @media (max-width: 995px) {
+    display: none;
   }
 `;
 
@@ -73,7 +80,7 @@ export const TitleProject = styled.span`
   > h2 {
     font-size: 3rem;
     font-weight: 900;
-    color: #8485f6;
+    color: #5252e0;
   }
 
   > span {

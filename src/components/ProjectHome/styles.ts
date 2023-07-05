@@ -67,5 +67,18 @@ export const Title = styled.h2`
 `;
 
 export const ContentProjects = styled.div `
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 
+  @media (max-width: 995px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 `
