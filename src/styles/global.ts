@@ -21,7 +21,7 @@ export default createGlobalStyle`
 
   ::-webkit-scrollbar {
     width: 0.5rem;
-    background-color: rgb(30, 30, 37);
+    background-color: #111;
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 0.5rem;

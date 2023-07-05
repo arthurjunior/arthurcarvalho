@@ -5,6 +5,7 @@ export const ContainerTitle = styled.div`
   top: 25rem;
   left: 10rem;
   /* overflow: hidden; */
+  
 
   @media (max-width: 995px) {
     position: static;
@@ -54,10 +55,12 @@ export const IntroTextH1 = styled.h1`
   font-size: 5.5rem;
   font-weight: 800;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #9442FE, #3378FF);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #9442fe, #3378ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  
 
   @media (max-width: 995px) {
     font-size: 3.52rem;
