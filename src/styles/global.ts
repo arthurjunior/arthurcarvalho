@@ -25,11 +25,14 @@ export default createGlobalStyle`
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 0.5rem;
-    background-color: rgb(82, 82, 224);}
+    background-color: #635eff;}
   body {
     height: 100rem;
-    background: #09090b;
+    /* background: rgb(3,7,18);
+    background: linear-gradient(90deg, rgba(3,7,18,1) 0%, rgba(30,30,37,1) 35%, rgba(6,5,5,1) 100%); */
+    background-color: rgb(17,17,17);
   }
+
 
   a {
     text-decoration: none;

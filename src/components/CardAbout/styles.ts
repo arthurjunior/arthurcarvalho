@@ -6,18 +6,24 @@ export const ContainerAbout = styled.section`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 19rem;
+  position: relative;
+
+  @media (min-width: 995px) {
+    margin-top: 15rem;
+  }
 `;
 
 export const ContentAbout = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1e1e25;
+  background-color: #151515;
   border-radius: 1rem;
   padding: 2.4rem;
   margin-top: 8rem;
   margin-bottom: 4rem;
+  border: 3px solid #1f1f1f;
 
   .aboutImg {
     display: flex;
@@ -27,6 +33,7 @@ export const ContentAbout = styled.section`
 
     img {
       width: 18rem;
+      filter: drop-shadow(1px 1px 10px #8485f6);
     }
 
     @media (min-width: 995px) {

@@ -7,10 +7,12 @@ import {
 } from "./styles";
 import astrounataCoffee from "../../assets/images/astronauta-cafe.png";
 import { ArrowRight, TelegramLogo } from "phosphor-react";
+import CardAnimation from "../CardAnimation";
 export default function CardAbout() {
   return (
     <>
       <ContainerAbout>
+        <CardAnimation />
         <ContentAbout>
           <div className="aboutImg">
             <img src={astrounataCoffee} alt="" />

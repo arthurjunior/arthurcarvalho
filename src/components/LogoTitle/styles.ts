@@ -13,4 +13,15 @@ export const SpanTitle = styled.span`
     transition-duration: 100ms;
     margin-top: -0.5rem;
   }
+
+  @keyframes titleFade {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 `;
