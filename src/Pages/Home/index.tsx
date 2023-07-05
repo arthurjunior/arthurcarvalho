@@ -5,6 +5,7 @@ import Title from "../../components/Title";
 import StarsCanvas from "../../components/Stars";
 import CardAbout from "../../components/CardAbout";
 import skater from "../../assets/images/LogoBanner.svg"
+import ProjectHome from "../../components/ProjectHome";
 export default function Home() {
   return (
     <>
@@ -19,8 +20,8 @@ export default function Home() {
         <img src={skater} alt="" />
        </LogoSkater>
       </BannerContainer>
-
       <CardAbout />
+      <ProjectHome/>
     </>
   );
 }

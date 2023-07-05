@@ -4,11 +4,11 @@ export const CardContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 45.4rem;
+  width: 45.4rem;
 
   cursor: pointer;
   &:hover .mobile {
-    opacity: 1;
+    display: block;
   }
 
   &:hover .titleProject {
@@ -35,23 +35,23 @@ export const CardContent = styled.div`
   }
 `;
 export const TabletContainer = styled.div`
-  opacity: 0;
+  display: none;
   height: 100%;
   transition: all 0.4s ease-in-out 0s;
   > img {
     position: relative;
-    left: 36rem;
+    left: 29.5rem;
     top: 0.6rem;
-    width: 17rem;
+    width: 15rem;
   }
 `;
 
 export const MobileContainer = styled.div`
   > img {
     position: absolute;
-    left: 31rem;
+    left: 26rem;
     top: 3rem;
-    width: 10rem;
+    width: 8rem;
   }
 `;
 

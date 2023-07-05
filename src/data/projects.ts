@@ -6,32 +6,32 @@ const projects = [
     title: "Turtle Movie",
     type: "Website",
     icon: "/projects/turtlemovie/icon.png",
-    github: "https://github.com/EvanderInacio/Turtle-Movie",
-    web: "https://turtle-movie.vercel.app/",
+    github: "https://github.com/LSB30/",
+    web: "",
     description:
       "Explore uma plataforma incrível que utiliza a poderosa API da TMDB para proporcionar a você uma experiência completa de descoberta de filmes e séries. Descubra as obras mais bem avaliadas da semana ou do dia, e mergulhe em uma seleção das obras mais populares da plataforma. Além disso, explore as obras com as maiores notas, para ter certeza de que está assistindo o melhor conteúdo disponível.",
     tags: [
       {
         name: "React Js",
-        icon: "/skills/react.svg",
+        icon: "/icons/react.svg",
         color: "#61DAFB",
         rgb: "97, 218, 251",
       },
       {
         name: "React Router",
-        icon: "/skills/react-router.svg",
+        icon: "/icons/react-router.svg",
         color: "#F44250",
         rgb: "244, 66, 80",
       },
       {
         name: "TypeScript",
-        icon: "/skills/typescript.svg",
+        icon: "/icons/typescript.svg",
         color: "#3178C6",
         rgb: "49, 120, 198",
       },
       {
         name: "Styled Components",
-        icon: "/skills/styled-components.svg",
+        icon: "/icons/styled-components.svg",
         color: "#C476AE",
         rgb: "196, 118, 174",
       },
