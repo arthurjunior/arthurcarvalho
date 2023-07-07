@@ -1,50 +1,151 @@
 import styled from "styled-components";
-import banner from "../../assets/images/shop-cart.png";
-export const CardContainer = styled.div`
+
+export const Container = styled.section`
+  padding-top: 18rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 45.4rem;
-  transition: display  0.4s ease-in-out 0s;
-  cursor: pointer;
-  &:hover .titleProject {
-    opacity: 1;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  @media (min-width: 995px) {
-    &:hover .mobile {
-      display: block;
-    }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 `;
-export const CardContent = styled.div`
-  max-width: 45.4rem;
-  position: relative;
-  height: 25rem;
-  width: 100%;
-  background-image: url(${banner});
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 13px;
-  border: 2px solid rgb(38, 35, 56);
 
-  @media (max-width: 995px) {
-    width: 33.9rem;
-    height: 17rem;
-  }
+export const ProjectsContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+  /* width: 45rem; */
+  align-items: center;
+  transition: transform 0.3s;
+  overflow: hidden;
+  border: 2px solid #4d4577;
 
   &:hover {
-    border: 2px solid rgba(84, 59, 163);
+    border-color: rgba(84, 59, 163);
+    border-radius: 11px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    opacity: 1;
+    object-fit: cover;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .title {
+    position: absolute;
+    padding: 0 1rem 2.2rem 1rem;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: linear-gradient(rgb(0, 0, 0, 0) -60%, rgb(8, 2, 5, 15));
+
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      height: 100%;
+    }
+
+    h2 {
+      font-weight: 900;
+      font-size: 3rem;
+      text-align: center;
+      color: rgba(84, 59, 163);
+    }
+
+    span {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #8485f6;
+      margin-bottom: 1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-direction: row;
+      gap: 0.9rem;
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+
+  
+  @media (min-width: 1300px) {
+    max-width: 40rem;
+  }
+
+  max-width: 34rem;
+`;
+
+export const ContentProjects = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  > img {
+    max-width: 45.4rem;
+    position: relative;
+    height: 25rem;
+    width: 100%;
   }
 `;
+
 export const TabletContainer = styled.div`
   display: none;
   height: 100%;
   transition: all 0.4s ease-in-out 0s;
   > img {
     position: relative;
-    left: 29.5rem;
-    top: 0.6rem;
+    left: 28.5rem;
+    top: 2rem;
     width: 15rem;
   }
 
@@ -56,71 +157,65 @@ export const TabletContainer = styled.div`
 export const MobileContainer = styled.div`
   > img {
     position: absolute;
-    left: 26rem;
-    top: 3rem;
+    left: 25rem;
+    top: 4rem;
     width: 8rem;
   }
 `;
 
-export const TitleProject = styled.span`
-  position: absolute;
-  padding: 0px 1.6rem 3.5rem;
-  bottom: 0rem;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-pack: end;
-  justify-content: flex-end;
-  align-items: flex-start;
-  background: linear-gradient(rgba(0, 0, 0, 0) -60%, rgb(8, 2, 5));
-  opacity: 0;
-  transition: all 0.4s ease-in-out 0s;
-  border-radius: 10px;
-  > h2 {
-    font-size: 3rem;
-    font-weight: 900;
-    color: #5252e0;
-  }
-
-  > span {
-    font-size: 1.9rem;
-    font-weight: 700;
-    margin-bottom: 1.2rem;
-    color: #fff;
-  }
-`;
-
-export const Tags = styled.div`
-  display: flex;
-  gap: 0.9rem;
-`;
-
-export const TagSpan = styled.span`
-  box-sizing: border-box;
-  display: block;
-  width: initial;
-  height: initial;
-  background: none;
+export const Title = styled.h2`
+  position: relative;
+  z-index: 1;
+  padding-top: 2rem;
+  font-size: 5.6rem;
+  font-weight: 800;
   opacity: 1;
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
-  max-width: 3.2rem;
+  margin: 2.2rem 0rem;
+  color: #8485f6;
+  > span {
+    z-index: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: -2.2rem;
+    left: 50%;
+    right: 50%;
+    opacity: 0.2;
+    color: #5252e0;
+    font-weight: 800;
+    font-size: 7.2rem;
+
+    @media (max-width: 995px) {
+      font-size: 6.2rem;
+    }
+  }
 
   > img {
-    display: block;
-    max-width: 100%;
-    width: initial;
-    height: initial;
-    background: none;
-    opacity: 1;
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
+    position: absolute;
+    width: 2rem;
+    bottom: 10rem;
+    z-index: -10;
+    animation: 1s ease 0s infinite normal none running bounce;
+    width: 8rem;
+
+    @media (max-width: 995px) {
+      right: -4rem;
+    }
   }
 
-  &:hover img {
-    opacity: 0.55;
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+
+    50% {
+      transform: translateY(0px);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
   }
 `;

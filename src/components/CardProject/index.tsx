@@ -1,43 +1,61 @@
-import {
-  CardContainer,
-  CardContent,
-  MobileContainer,
-  TabletContainer,
-  TagSpan,
-  Tags,
-  TitleProject,
-} from "./styles";
-import mobile from "../../assets/images/mobile.png";
-import tablet from "../../assets/images/tablet.png";
-import js from "../../assets/images/javascript.svg"
+import { Container, ProjectContainer, ProjectsContent, Title } from "./styles";
+import projects from "../../data/projects";
+import { Link } from "react-router-dom";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+import code from "../../../public/skills/codeTwo.svg";
 
-interface CardProjectProps{
-  title: string
-  subTitle: string
-  
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+interface Projects {
+  id: number;
+  url: string;
+  img: string;
+  title: string;
+  type: string;
+  icon: string;
+  github: string;
+  web: string;
+  tablet: string;
+  mobile: string;
 }
 
-export default function CardProject({title, subTitle}: CardProjectProps) {
+export default function CardProject() {
   return (
-    <CardContainer>
-      <CardContent>
-        <TitleProject className="titleProject">
-          <h2>{title}</h2>
-          <span>{subTitle}</span>
-          <Tags>
-            <TagSpan>
-              <img src={js} alt="" />
-            </TagSpan>
-          </Tags>
-        </TitleProject>
+    <Container>
+      <Title>
+        Projetos
+        <span>
+          <HiOutlineDesktopComputer /> Projects
+        </span>
+        <img src={code} alt="" />
+      </Title>
+      <ProjectContainer>
+        {projects.slice(0, 9).map((project) => {
+          return (
+            <Link to={`/project/${project.url}`} key={project.id}>
+              <ProjectsContent>
+                <img src={project.img} alt={project.title} className="banner" />
+                <div className="title">
+                  <h2>{project.title}</h2>
+                  <span>{project.type}</span>
 
-        <TabletContainer className="mobile">
-          <img src={tablet} alt="" />
-          <MobileContainer>
-            <img src={mobile} alt="" />
-          </MobileContainer>
-        </TabletContainer>
-      </CardContent>
-    </CardContainer>
+                  <div className="tags">
+                    {project.tags.map((tag) => {
+                      return (
+                        <img
+                          src={tag.icon}
+                          alt={tag.name}
+                          key={tag.name}
+                          className="tagsImg"
+                        />
+                      );
+                    })}
+                  </div>
+                </div>
+              </ProjectsContent>
+            </Link>
+          );
+        })}
+      </ProjectContainer>
+    </Container>
   );
 }

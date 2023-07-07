@@ -22,13 +22,14 @@ export default function CardAbout() {
             <div className="aboutDescription">
               <h2>Deixe-me apresentar</h2>
               <p>
-                Sou um desenvolvedor front-end apaixonado por projetar e
-                codificar. Minha especialidade é a criação de interfaces e
-                funcionalidades para aplicativos da web usando React.js e
-                Next.js. Proativo e com rápido aprendizado, com forte
-                capacidade de adaptação. Sempre em busca de novos desafios para
-                expandir minhas habilidades e acompanhar o campo de
-                desenvolvimento , que está em constante evolução.
+                Sou uma pessoa que nunca se cansa de buscar conhecimentos novos,
+                sempre estou disposto a ouvir e aprender com outras pessoas.
+                Sendo um profissional que gosta do que faz e com isso busco me
+                tornar cada vez melhor e eficiente.Sempre busco me atualizar nas
+                tecnologias do mercado e nunca tenho o pensamento de ficar
+                estagnado,por isso,busco novos desafios que possam me levar para
+                o próximo nível.Cresci com a tecnologia e hoje faço dela a minha
+                paixão.
               </p>
               <div className="aboutBtns">
                 <Link to="#">
