@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import star from "../../assets/images/bg-stars.svg"
 export const ContainerAbout = styled.section`
   padding-top: 3.2rem;
   display: flex;
@@ -8,7 +8,7 @@ export const ContainerAbout = styled.section`
   justify-content: center;
   margin-top: 19rem;
   position: relative;
-
+  background-image: url(${star});
   @media (min-width: 995px) {
     margin-top: 15rem;
   }

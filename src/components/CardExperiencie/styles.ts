@@ -1,12 +1,12 @@
 import styled from "styled-components";
-
+import star from "../../assets/images/bg-stars.svg"
 export const Container = styled.section`
   padding-top: 18rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  background-image: url(${star});
   .imgWork {
     border-radius: 50%;
     width: 6rem;
