@@ -9,7 +9,7 @@ export const SpanTitle = styled.span`
   transition-duration: 500ms;
 
   &:hover {
-    color: #7b73e5;
+    color: #8485f6;
     transition-duration: 100ms;
     margin-top: -0.5rem;
   }

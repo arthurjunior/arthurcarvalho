@@ -39,10 +39,11 @@ export const ProjectsContent = styled.div`
   align-items: center;
   transition: transform 0.3s;
   overflow: hidden;
-  border: 2px solid #4d4577;
+  border: 3px solid #8485f6;
+
 
   &:hover {
-    border-color: rgba(84, 59, 163);
+    border-color: #5252e0;
     border-radius: 11px;
   }
 

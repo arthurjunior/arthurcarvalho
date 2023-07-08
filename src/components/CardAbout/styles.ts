@@ -18,12 +18,12 @@ export const ContentAbout = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #151515;
+  /* background-color: #1c1c22; */
   border-radius: 1rem;
   padding: 2.4rem;
   margin-top: 8rem;
   margin-bottom: 4rem;
-  border: 3px solid #1f1f1f;
+  border: 3px solid #8485f6;
 
   .aboutImg {
     display: flex;
@@ -49,7 +49,7 @@ export const ContentAbout = styled.section`
     max-width: 45rem;
 
     h2 {
-      color: #7b73e5;
+      color: #8485f6;
       font-size: 2.3rem;
     }
 
@@ -124,7 +124,7 @@ export const Button = styled.div`
 export const ButtonAlternatives = styled.button`
   border: none;
   background: transparent;
-  color: rgb(177, 188, 220);
+  color: #8485f6;
   cursor: pointer;
   font-size: 1.92rem;
   font-weight: 500;
@@ -139,10 +139,10 @@ export const ButtonAlternatives = styled.button`
   background-repeat: no-repeat;
   transition: background-size 0.5s ease-in-out;
   background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#7b73e5, #7b73e5);
+    linear-gradient(#8485f6, #8485f6);
 
   &:hover {
-    color: #7b73e5;
+    color: #8485f6;
     background-size: 100% 3px;
     background-position: 0 100%;
   }

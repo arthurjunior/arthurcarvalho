@@ -8,10 +8,10 @@ export const MenuContainer = styled.header`
   justify-content: space-between;
   padding: 0 2rem;
 
-  background: #111;
+  /* background: #111; */
   backdrop-filter: blur(24px);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
-  border-bottom: 1px solid #101013;
+  box-shadow: rgb(2, 6, 23) 0px 10px 30px 1px;
+  /* background: #0d0d0d; */
   position: fixed;
   top: 0px;
   left: 0px;

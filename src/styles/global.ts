@@ -21,20 +21,23 @@ export default createGlobalStyle`
 
   ::-webkit-scrollbar {
     width: 0.5rem;
-    background-color: #111;
+    background: rgb(3,7,18);
+    background: linear-gradient(90deg, rgba(3,7,18,1) 0%, rgba(30,30,37,1) 35%, rgba(6,5,5,1) 100%);
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 0.5rem;
     background-color: #635eff;}
   body {
-    height: 100rem;
-    /* background: rgb(3,7,18);
-    background: linear-gradient(90deg, rgba(3,7,18,1) 0%, rgba(30,30,37,1) 35%, rgba(6,5,5,1) 100%); */
-    background-color: rgb(17,17,17);
+    color:  #9ca3af;
+    
+    background: rgb(3,7,18);
+    background: linear-gradient(90deg, rgba(3,7,18,1) 0%, rgba(30,30,37,1) 35%, rgba(6,5,5,1) 100%);
   }
 
-
+  
   a {
     text-decoration: none;
   }
+
+
 `;

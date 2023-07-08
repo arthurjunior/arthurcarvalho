@@ -1,4 +1,3 @@
-import { PointMaterial } from '@react-three/drei';
 import styled from "styled-components";
 
 export const Nav = styled.nav`
@@ -37,10 +36,10 @@ export const Li = styled.li`
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 1px;
+    height: 2px;
     bottom: -7px;
     left: 0;
-    background: linear-gradient(270deg, #986dff 0%, #17161d 100%);
+    background: linear-gradient(270deg, #8485f6 0%, #17161d 100%);
     transform-origin: bottom right;
     transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
   }

@@ -10,7 +10,8 @@ export const NavMenu = styled.nav<Click>`
   @media (max-width: 994px) {
     height: 100vh;
     width: 100vw;
-    background: #131314;
+    backdrop-filter: blur(24px);
+    box-shadow: rgb(2, 6, 23) 0px 10px 30px 1px;
     z-index: 10;
     opacity: 0.95;
     position: fixed;
@@ -31,7 +32,7 @@ export const MobileIcon = styled.div`
     right: 1rem;
     cursor: pointer;
     z-index: 20;
-    
+
     > svg {
       color: rgb(226, 232, 240);
     }

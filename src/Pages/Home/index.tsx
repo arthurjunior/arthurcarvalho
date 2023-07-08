@@ -6,6 +6,7 @@ import StarsCanvas from "../../components/Stars";
 import CardAbout from "../../components/CardAbout";
 import skater from "../../assets/images/LogoBanner.svg"
 import CardProject from "../../components/CardProject";
+import CardExperience from "../../components/CardExperiencie";
 export default function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function Home() {
       </BannerContainer>
       <CardAbout />
       <CardProject/>
+      <CardExperience/>
     </>
   );
 }
