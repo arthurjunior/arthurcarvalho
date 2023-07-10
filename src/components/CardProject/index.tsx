@@ -41,14 +41,34 @@ export default function CardProject() {
                   <div className="tags">
                     {project.tags.map((tag) => {
                       return (
+                        <>
                         <img
                           src={tag.icon}
                           alt={tag.name}
                           key={tag.name}
                           className="tagsImg"
                         />
+                        
+                        </>
                       );
                     })}
+                  </div>
+
+                  <div className="telemovel">
+                    {project.mobileImgs.map(mobileImg => {
+                      return (
+                        <img
+                        src={mobileImg.mobile}
+                        alt={project.title}
+                        key={project.title}
+                        />
+                        
+                        
+                      )
+                    })}
+                  </div>
+                  <div className="btns">
+                    
                   </div>
                 </div>
               </ProjectsContent>

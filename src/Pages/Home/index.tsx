@@ -8,6 +8,7 @@ import skater from "../../assets/images/LogoBanner.svg"
 import CardProject from "../../components/CardProject";
 import CardExperience from "../../components/CardExperiencie";
 import CardSkills from "../../components/CardSkills";
+import { ScrollTop } from "../../components/ScrollTop";
 export default function Home() {
   return (
     <>
@@ -26,6 +27,7 @@ export default function Home() {
       <CardProject/>
       <CardExperience/>
       <CardSkills/>
+      <ScrollTop/>
     </>
   );
 }

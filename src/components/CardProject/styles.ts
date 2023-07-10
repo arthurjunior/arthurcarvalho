@@ -40,14 +40,6 @@ export const ProjectsContent = styled.div`
   align-items: center;
   transition: transform 0.3s;
   overflow: hidden;
-  border: 3px solid #8485f6;
-
-
-  &:hover {
-    border-color: #5252e0;
-    border-radius: 11px;
-  }
-
   img {
     width: 100%;
     height: 100%;
@@ -63,15 +55,14 @@ export const ProjectsContent = styled.div`
   .title {
     position: absolute;
     padding: 0 1rem 2.2rem 1rem;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
+    bottom: 23px;
+    height: 85%;
+    width: 78%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
     background: linear-gradient(rgb(0, 0, 0, 0) -60%, rgb(8, 2, 5, 15));
-
     opacity: 0;
     transition: 0.4s ease-in-out;
 
@@ -103,12 +94,20 @@ export const ProjectsContent = styled.div`
     }
   }
 
+  .telemovel {
+    width: 8rem;
+    padding-top: 5rem;
+    position: absolute;
+    right: 2rem;
+    top: 0.5rem;
+    
+  }
   
   @media (min-width: 1300px) {
-    max-width: 40rem;
+    max-width: 45rem;
   }
 
-  max-width: 34rem;
+ 
 `;
 
 export const ContentProjects = styled.div`
@@ -118,18 +117,19 @@ export const ContentProjects = styled.div`
   align-items: center;
   gap: 1rem;
   margin-bottom: 5rem;
-
   margin-left: 1rem;
   margin-right: 1rem;
 
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
   }
 
   @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
   }
 
   > img {

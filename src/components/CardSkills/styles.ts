@@ -88,7 +88,7 @@ export const SkillsContainer = styled.div`
 export const SkillsContent = styled.div`
   width: 19.2rem;
   height: 16rem;
-  background-color: hsl(224,62%,8%);
+  background-color: rgba(24,24,27,.6);
 
   border-radius: 2.5rem;
   position: relative;

@@ -21,7 +21,7 @@ export default function MenuMobile() {
       </MobileContent>
 
       <NavMenu onClick={handleOpen} open={open}>
-
+            
       </NavMenu>
     </>
   );
