@@ -2,7 +2,7 @@ import Menu from "../../components/Menu";
 import StatusJob from "../../components/StatusJob";
 import { ContainerStatus, BannerContainer, LogoSkater } from "./styles";
 import Title from "../../components/Title";
-import StarsCanvas from "../../components/Stars";
+
 import CardAbout from "../../components/CardAbout";
 import skater from "../../assets/images/LogoBanner.svg"
 import CardProject from "../../components/CardProject";
@@ -13,7 +13,7 @@ import GitHub from "../../components/CardProject/GitHub";
 export default function Home() {
   return (
     <>
-      <StarsCanvas />
+      
       <ContainerStatus>
         <StatusJob />
       </ContainerStatus>

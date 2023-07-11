@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import star from "../../assets/images/bg-stars.svg"
 
 export const ContainerStatus = styled.div`
   display: flex;
@@ -50,7 +51,7 @@ export const BannerContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  background-image: url(${star});
   @media (max-width: 995px) {
     display: block;
   }
