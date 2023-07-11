@@ -10,6 +10,7 @@ import {
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
+import CardProject from "../CardProject";
 
 export default function Title() {
   return (
@@ -37,7 +38,7 @@ export default function Title() {
 
           <div className="button">
             <ButtonPrimary>
-              <Link to="/projetos">
+              <a href="#projects">
                 <span>
                   <b>Conheça meu portfólio</b>
                   <FiArrowRight
@@ -45,7 +46,7 @@ export default function Title() {
                     size={20}
                   />
                 </span>
-              </Link>
+              </a>
             </ButtonPrimary>
           </div>
         </ContainerTitle>

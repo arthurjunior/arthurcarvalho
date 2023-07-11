@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import star from "../../assets/images/bg-stars.svg"
+import star from "../../assets/images/bg-stars.svg";
 export const Container = styled.section`
   padding-top: 18rem;
   display: flex;
@@ -14,7 +14,7 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 5rem;
   margin-bottom: 5rem;
 
   margin-left: 1rem;
@@ -27,7 +27,8 @@ export const ProjectContainer = styled.div`
 
   @media (min-width: 1200px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100rem;
   }
 `;
 
@@ -75,13 +76,15 @@ export const ProjectsContent = styled.div`
       font-weight: 900;
       font-size: 3rem;
       text-align: center;
-      color: rgba(84, 59, 163);
+      color: #8485f6;
+      filter: drop-shadow(10px 10px 10px black);
     }
 
     span {
       font-size: 1.6rem;
       font-weight: 700;
-      color: #8485f6;
+      
+      color: #fff;
       margin-bottom: 1rem;
     }
 
@@ -100,14 +103,11 @@ export const ProjectsContent = styled.div`
     position: absolute;
     right: 2rem;
     top: 0.5rem;
-    
   }
-  
+
   @media (min-width: 1300px) {
     max-width: 45rem;
   }
-
- 
 `;
 
 export const ContentProjects = styled.div`
@@ -123,13 +123,11 @@ export const ContentProjects = styled.div`
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
   }
 
   @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
   }
 
   > img {
@@ -219,5 +217,34 @@ export const Title = styled.h2`
       transform: translateY(0px);
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
+  }
+`;
+
+export const ButtonProject = styled.button`
+  margin-top: 2rem;
+  border: none;
+  background: transparent;
+  color:  #fff;
+
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+  border-bottom-width: 0;
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#8485f6, #8485f6);
+
+  &:hover {
+    color: #8485f6;
+    background-size: 100% 3px;
+    background-position: 0 100%;
   }
 `;

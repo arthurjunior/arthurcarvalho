@@ -1,6 +1,7 @@
-import { Container, ProjectContainer, ProjectsContent, Title } from "./styles";
+import { ButtonProject, Container, ProjectContainer, ProjectsContent, Title } from "./styles";
 import projects from "../../data/projects";
 import { Link } from "react-router-dom";
+import { ArrowRight, TelegramLogo } from "phosphor-react";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import code from "../../../public/skills/codeTwo.svg";
 
@@ -20,7 +21,7 @@ interface Projects {
 
 export default function CardProject() {
   return (
-    <Container>
+    <Container id="projects">
       <Title>
         Projetos
         <span>
@@ -31,7 +32,7 @@ export default function CardProject() {
       <ProjectContainer>
         {projects.slice(0, 9).map((project) => {
           return (
-            <Link to={`/project/${project.url}`} key={project.id}>
+            <a href={`${project.url}`} key={project.id} target="_blank">
               <ProjectsContent>
                 <img src={project.img} alt={project.title} className="banner" />
                 <div className="title">
@@ -68,11 +69,14 @@ export default function CardProject() {
                     })}
                   </div>
                   <div className="btns">
-                    
+
+                    <ButtonProject>
+                      Ver Projeto <ArrowRight/>
+                    </ButtonProject>
                   </div>
                 </div>
               </ProjectsContent>
-            </Link>
+            </a>
           );
         })}
       </ProjectContainer>
