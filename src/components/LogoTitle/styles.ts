@@ -12,6 +12,8 @@ export const SpanTitle = styled.span`
     color: #8485f6;
     transition-duration: 100ms;
     margin-top: -0.5rem;
+    filter: drop-shadow(1px 1px 10px #8485f6);
+
   }
 
   @keyframes titleFade {

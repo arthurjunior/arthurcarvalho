@@ -63,6 +63,8 @@ export const IconSocial = styled.a`
   &:hover > img {
     opacity: 1;
     transform: scale(1.2);
+    filter: drop-shadow(1px 1px 10px #8485f6);
+
   }
 
   @media (max-width: 995px) {

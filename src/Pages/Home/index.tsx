@@ -9,6 +9,8 @@ import CardExperience from "../../components/CardExperiencie";
 import CardSkills from "../../components/CardSkills";
 import { ScrollTop } from "../../components/ScrollTop";
 import GitHub from "../../components/CardProject/GitHub";
+import CardContact from "../../components/CardContact";
+import Footer from "../../components/Footer";
 export default function Home() {
   return (
     <>
@@ -28,6 +30,8 @@ export default function Home() {
       <GitHub/>
       <CardExperience/>
       <CardSkills/>
+      <CardContact/>
+      <Footer/>
       <ScrollTop/>
     </>
   );

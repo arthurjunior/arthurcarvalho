@@ -13,7 +13,7 @@ const works = [
       { name: "JavaScript", icon: "/skills/javascript (2).svg" },
       { name: "TypeScript", icon: "/skills/typescript.svg" },
       { name: "React JS", icon: "/skills/react.svg" },
-      { name: "MaterialUL", icon: "/skills/material-ui.svg" },
+      { name: "Styled Components", icon: "/skills/styled-components.svg" },
     ],
     date: "Fev 2023 - Presente",
   },
