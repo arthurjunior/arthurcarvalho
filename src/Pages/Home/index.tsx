@@ -9,6 +9,7 @@ import CardProject from "../../components/CardProject";
 import CardExperience from "../../components/CardExperiencie";
 import CardSkills from "../../components/CardSkills";
 import { ScrollTop } from "../../components/ScrollTop";
+import GitHub from "../../components/CardProject/GitHub";
 export default function Home() {
   return (
     <>
@@ -25,6 +26,7 @@ export default function Home() {
       </BannerContainer>
       <CardAbout />
       <CardProject/>
+      <GitHub/>
       <CardExperience/>
       <CardSkills/>
       <ScrollTop/>
