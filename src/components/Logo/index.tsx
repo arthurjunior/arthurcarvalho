@@ -1,6 +1,6 @@
 import LogoTitle from "../LogoTitle";
 import { LogoContainer, ImgContainer } from "./styles";
-import logoPizza from "../../assets/images/logoPizza-PhotoRoom.png-PhotoRoom.png"
+import logoPizza from "/logoPizza-PhotoRoom.png-PhotoRoom.png"
 import { Link } from "react-router-dom";
 export default function Logo() {
   return (

@@ -1,8 +1,14 @@
-import { ButtonProject, Container, ProjectContainer, ProjectsContent, Title } from "./styles";
+import {
+  ButtonProject,
+  Container,
+  ProjectContainer,
+  ProjectsContent,
+  Title,
+} from "./styles";
 import projects from "../../data/projects";
 import { ArrowRight } from "phosphor-react";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
-import code from "../../../public/skills/codeTwo.svg";
+import code from "/skills/codeTwo.svg";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface CardProject {
@@ -41,36 +47,30 @@ export default function CardProject() {
                   <div className="tags">
                     {project.tags.map((tag) => {
                       return (
-                        <>
                         <img
                           src={tag.icon}
                           alt={tag.name}
                           key={tag.name}
                           className="tagsImg"
                         />
-                        
-                        </>
                       );
                     })}
                   </div>
 
                   <div className="telemovel">
-                    {project.mobileImgs.map(mobileImg => {
+                    {project.mobileImgs.map((mobileImg) => {
                       return (
                         <img
-                        src={mobileImg.mobile}
-                        alt={project.title}
-                        key={project.title}
+                          src={mobileImg.mobile}
+                          alt={project.title}
+                          key={project.title}
                         />
-                        
-                        
-                      )
+                      );
                     })}
                   </div>
                   <div className="btns">
-
                     <ButtonProject>
-                      Ver Projeto <ArrowRight/>
+                      Ver Projeto <ArrowRight />
                     </ButtonProject>
                   </div>
                 </div>
