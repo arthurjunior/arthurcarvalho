@@ -2,7 +2,6 @@ import Menu from "../../components/Menu";
 import StatusJob from "../../components/StatusJob";
 import { ContainerStatus, BannerContainer, LogoSkater } from "./styles";
 import Title from "../../components/Title";
-
 import CardAbout from "../../components/CardAbout";
 import skater from "../../assets/images/LogoBanner.svg"
 import CardProject from "../../components/CardProject";
