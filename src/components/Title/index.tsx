@@ -8,9 +8,7 @@ import {
   IntroTextP,
 } from "./styles";
 import Typewriter from "typewriter-effect";
-import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
-import CardProject from "../CardProject";
 
 export default function Title() {
   return (

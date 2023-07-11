@@ -4,7 +4,7 @@ import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.cjs";
 import { ContainerStar } from "./styles";
 
-const Stars = (props: any) => {
+const Stars = (props) => {
   const ref = useRef();
   const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
   useFrame((state, delta) => {
