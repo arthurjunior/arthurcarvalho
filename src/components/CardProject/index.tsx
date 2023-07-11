@@ -1,12 +1,11 @@
 import { ButtonProject, Container, ProjectContainer, ProjectsContent, Title } from "./styles";
 import projects from "../../data/projects";
-import { Link } from "react-router-dom";
-import { ArrowRight, TelegramLogo } from "phosphor-react";
+import { ArrowRight } from "phosphor-react";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import code from "../../../public/skills/codeTwo.svg";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-interface Projects {
+interface CardProject {
   id: number;
   url: string;
   img: string;
