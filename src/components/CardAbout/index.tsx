@@ -3,7 +3,7 @@ import {
   ContentAbout,
   ContainerAbout,
   Button,
-
+//
 } from "./styles";
 import astrounataCoffee from "../../assets/images/12.jpg";
 import { TelegramLogo } from "phosphor-react";
@@ -13,7 +13,7 @@ export default function CardAbout() {
     <>
       <ContainerAbout>
         <CardAnimation />
-        <ContentAbout>
+        <ContentAbout id="about">
           <div className="aboutImg">
             <img src={astrounataCoffee} alt="" />
           </div>

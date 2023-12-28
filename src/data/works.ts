@@ -20,18 +20,18 @@ const works = [
 
   {
     id: 2,
-    img: "/skills/kawasaki.svg",
+    img: "/skills/kawasaki.jpg",
     title: "Kawasaki Motores do brasil Ltda.",
     subTitle: "Assistente de analista de TI",
     office: "Desenvolvedor",
     description:
       "Desenvolvi um programa inovador para geração e consulta de relatórios na fábrica, utilizando Visual Studio 2019 e Android Studio. Essa solução eficiente e intuitiva, criada em C#, proporcionou à equipe acesso rápido a informações cruciais. Este projeto destaca minha habilidade em oferecer soluções práticas e inovadoras para desafios reais, demonstrando meu comprometimento com a eficiência operacional.",
     tags: [
-      { name: "Excel", icon: "/skills/excel.svg" },
-      { name: "World", icon: "/skills/word.svg" },
-      { name: "SAP", icon: "/skills/sap.svg" },
-      { name: "Access", icon: "/skills/access.svg" },
-      { name: "Power Bi", icon: "/skills/powerbi.svg" },
+      { name: "Excel", icon: "/skills/visualstudio.svg" },
+      { name: "World", icon: "/skills/oraclesql.png" },
+      { name: "SAP", icon: "/skills/oracle.svg" },
+      { name: "Access", icon: "/skills/office.svg" },
+      { name: "Power Bi", icon: "/skills/csharp.png" },
       { name: "Power Point", icon: "/skills/powerpoint.svg" },
     ],
     date: "abril 2023 - novembro 2023",
