@@ -5,7 +5,7 @@ import {
   Button,
   ButtonAlternatives,
 } from "./styles";
-import astrounataCoffee from "../../assets/images/astronauta-cafe.png";
+import astrounataCoffee from "../../assets/images/12.jpg";
 import { ArrowRight, TelegramLogo } from "phosphor-react";
 import CardAnimation from "../CardAnimation";
 export default function CardAbout() {
@@ -20,19 +20,15 @@ export default function CardAbout() {
 
           <div className="aboutContent">
             <div className="aboutDescription">
-              <h2>Deixe-me apresentar</h2>
+              <h2>Meu perfil profissional</h2>
               <p>
-                Sou uma pessoa que nunca se cansa de buscar conhecimentos novos,
-                sempre estou disposto a ouvir e aprender com outras pessoas.
-                Sendo um profissional que gosta do que faz e com isso busco me
-                tornar cada vez melhor e eficiente.Sempre busco me atualizar nas
-                tecnologias do mercado e nunca tenho o pensamento de ficar
-                estagnado,por isso,busco novos desafios que possam me levar para
-                o próximo nível.Cresci com a tecnologia e hoje faço dela a minha
-                paixão.
+              Como programador, transformo ideias em apps incríveis, mantendo as coisas simples e funcionais.
+               Minha atenção aos detalhes garante que tudo seja fácil de usar, tornando a tecnologia acessível para todos. 
+               Sou comprometido com a qualidade, resolvendo problemas de forma eficiente e colaborando para criar coisas
+                incríveis! Me fale sobre seu problema!?
               </p>
               <div className="aboutBtns">
-                <Link to="#">
+                <Link to="mailto:dev.arthurcarvalho@gmail.com">
                   <Button>
                     Entre em Contato
                     <TelegramLogo
@@ -44,19 +40,6 @@ export default function CardAbout() {
                       weight="bold"
                     />
                   </Button>
-                </Link>
-                <Link to="#">
-                  <ButtonAlternatives>
-                    Ler mais
-                    <ArrowRight
-                      style={{
-                        marginBottom: "-0.1rem",
-                        marginLeft: "0.2rem",
-                      }}
-                      weight="bold"
-                      size={16}
-                    />
-                  </ButtonAlternatives>
                 </Link>
               </div>
             </div>

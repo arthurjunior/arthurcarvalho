@@ -16,15 +16,15 @@ export default function Title() {
       <ContainerMobile>
         <ContainerTitle
         >
-          <IntroTextP>Olá,👋🏻 o meu nome é</IntroTextP>
-          <IntroTextH1 >Lucas Santana</IntroTextH1>
+          <IntroTextP>Olá, o meu nome é</IntroTextP>
+          <IntroTextH1 >Arthur Carvalho</IntroTextH1>
           <IntroTextH2>
             <Typewriter
               options={{
                 strings: [
-                  "Front-end Developer",
-                  "React Specialist",
-                  "Next Specialist",
+                  "Software Developer",
+                  "Curioso",
+                  "Comprometido",
                 ],
                 autoStart: true,
                 loop: true,
