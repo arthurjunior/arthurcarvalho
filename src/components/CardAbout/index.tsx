@@ -3,10 +3,10 @@ import {
   ContentAbout,
   ContainerAbout,
   Button,
-  ButtonAlternatives,
+
 } from "./styles";
 import astrounataCoffee from "../../assets/images/12.jpg";
-import { ArrowRight, TelegramLogo } from "phosphor-react";
+import { TelegramLogo } from "phosphor-react";
 import CardAnimation from "../CardAnimation";
 export default function CardAbout() {
   return (

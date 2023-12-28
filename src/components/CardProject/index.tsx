@@ -22,6 +22,7 @@ interface CardProject {
   web: string;
   tablet: string;
   mobile: string;
+  name: string;
 }
 
 export default function CardProject() {
@@ -45,7 +46,7 @@ export default function CardProject() {
                   <span>{project.type}</span>
 
                   <div className="tags">
-                    {project.tags.map((tag) => {
+                  {(project.tags as CardProject[]).map((tag) => {
                       return (
                         <img
                           src={tag.icon}
