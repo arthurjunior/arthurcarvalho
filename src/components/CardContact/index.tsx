@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export default function CardContact() {
   return (
-    <Container>
+    <Container id="contato">
       <ContentContact>
         <div className="contact-text">
           <h1>Vamos Conversar !</h1>

@@ -8,7 +8,7 @@ import {
 export default function StatusJob() {
   return (
     <>
-      <StatusContainer>
+      <StatusContainer id="home">
         <StatusMessage>
           <StatusIcon />
           <StatusTitle><span>DISPONÍVEL PARA TRABALHO FREELANCE!</span></StatusTitle>

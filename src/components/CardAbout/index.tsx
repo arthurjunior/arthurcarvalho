@@ -11,9 +11,9 @@ import CardAnimation from "../CardAnimation";
 export default function CardAbout() {
   return (
     <>
-      <ContainerAbout>
+      <ContainerAbout id="about">
         <CardAnimation />
-        <ContentAbout id="about">
+        <ContentAbout>
           <div className="aboutImg">
             <img src={astrounataCoffee} alt="" />
           </div>

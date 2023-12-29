@@ -1,25 +1,35 @@
+
 import { Li, Nav } from "./styles";
-import { Link } from "react-router-dom";
+
 
 export default function Navigation() {
+  const scrollToProjetos = () => {
+    const projetosElement = document.getElementById("projetos");
+    if (projetosElement) {
+      projetosElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Nav>
-        <Link to="/#about">
+        
+        <a href="#home">
           <Li style={{ animation: "0.5s ease 0.3s 1 normal forwards running navLinkFade" }}>Home</Li>
-        </Link>
+          </a>
+        
 
-        <Link to="/#projects">
-          <Li style={{ animation: "0.5s ease 0.442857s 1 normal forwards running navLinkFade" }}>Projetos</Li>
-        </Link>
+          <a href="#projetos">
+          <Li onClick={scrollToProjetos} style={{ animation: "0.5s ease 0.442857s 1 normal forwards running navLinkFade" }}>Projetos</Li>
+          </a>
 
-        <Link to="/#sobre">
+        <a href ="#about">
           <Li style={{ animation: "0.5s ease 0.585714s 1 normal forwards running navLinkFade" }}>Sobre</Li>
-        </Link>
+        </a>
 
-        <Link to="/#contato">
+        <a href="#contato">
           <Li style={{ animation: "0.5s ease 0.728571s 1 normal forwards running navLinkFade" }}>Contato</Li>
-        </Link>
+        </a>
       </Nav>
     </>
   );
