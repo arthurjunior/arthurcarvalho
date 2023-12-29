@@ -5,7 +5,7 @@ export default function Navigation() {
   return (
     <>
       <Nav>
-        <Link to="/#projetos">
+        <Link to="/#about">
           <Li style={{ animation: "0.5s ease 0.3s 1 normal forwards running navLinkFade" }}>Home</Li>
         </Link>
 

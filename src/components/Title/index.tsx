@@ -36,7 +36,7 @@ export default function Title() {
 
           <div className="button">
             <ButtonPrimary>
-              <a href="#projects">
+              <a href="#projetos">
                 <span>
                   <b>Conheça meu portfólio</b>
                   <FiArrowRight
