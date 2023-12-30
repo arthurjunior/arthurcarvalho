@@ -16,17 +16,16 @@ export const NavMenu = styled.nav<Click>`
     opacity: 0.95;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    transition: transform 0.5s ease-in-out;
-    //display: ${({ open }) => (open ? "block" : "none")};
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
 `;
 
 export const MobileIcon = styled.div`
   display: none;
   transition: all 1s linear;
+
   @media (max-width: 994px) {
     display: block;
-    position: absolute;
     position: fixed;
     top: 1rem;
     right: 1rem;
@@ -35,6 +34,7 @@ export const MobileIcon = styled.div`
 
     > svg {
       color: rgb(226, 232, 240);
+      transition: color 0.5s ease-in-out;
     }
   }
 `;
