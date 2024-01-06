@@ -11,12 +11,12 @@ export default function StatusJob() {
       <StatusContainer id="home">
         <StatusMessage>
           <StatusIcon />
-          <StatusTitle><span>DISPONÍVEL PARA TRABALHO FREELANCE!</span></StatusTitle>
+          <StatusTitle><span>DISPONÍVEL PARA TRABALHO FREELANCE</span></StatusTitle>
         </StatusMessage>
 
         <StatusMessage>
           <StatusIcon />
-          <StatusTitle><span>DISPONÍVEL PARA TRABALHO FREELANCE!</span></StatusTitle>
+          <StatusTitle><span>DISPONÍVEL PARA TRABALHO FREELANCE</span></StatusTitle>
         </StatusMessage>
       </StatusContainer>
     </>
