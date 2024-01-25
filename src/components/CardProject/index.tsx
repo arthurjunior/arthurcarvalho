@@ -58,17 +58,7 @@ export default function CardProject() {
                     })}
                   </div>
 
-                  <div className="telemovel">
-                    {project.mobileImgs.map((mobileImg) => {
-                      return (
-                        <img
-                          src={mobileImg.mobile}
-                          alt={project.title}
-                          key={project.title}
-                        />
-                      );
-                    })}
-                  </div>
+                  
                   <div className="btns">
                     <ButtonProject>
                       Ver Projeto <ArrowRight />

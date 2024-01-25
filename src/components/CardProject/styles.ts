@@ -55,45 +55,53 @@ export const ProjectsContent = styled.div`
 
   .title {
     position: absolute;
-    padding: 0 1rem 2.2rem 1rem;
-    bottom: 23px;
-    height: 85%;
-    width: 78%;
+    padding: 0.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start;
-    background: linear-gradient(rgb(0, 0, 0, 0) -60%, rgb(8, 2, 5, 15));
+    align-items: center;
+    background: linear-gradient(rgb(0, 0, 0, 0) -20%, rgb(8, 2, 5, 15));
     opacity: 0;
     transition: 0.4s ease-in-out;
-
+    box-sizing: border-box;
+  
     &:hover {
       opacity: 1;
       height: 100%;
     }
-
+  
     h2 {
       font-weight: 900;
-      font-size: 3rem;
+      font-size: 2.5rem;
       text-align: center;
       color: #8485f6;
-      filter: drop-shadow(10px 10px 10px black);
+      filter: drop-shadow(5px 5px 5px black);
+      margin-bottom: 0.5rem;
     }
-
+  
     span {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       font-weight: 700;
-      
       color: #fff;
-      margin-bottom: 1rem;
+      margin-bottom: 0.3rem;
     }
-
+  
     .tags {
       display: flex;
-      flex-direction: row;
-      gap: 0.9rem;
-      width: 3.2rem;
-      height: 3.2rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  
+    .tagsImg {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
     }
   }
 
