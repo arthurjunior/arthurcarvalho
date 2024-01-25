@@ -17,6 +17,25 @@ export const NavMenu = styled.nav<Click>`
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 18px;
+      // Adicione mais estilos conforme necessário
+    }
+    &:hover {
+      color: #007bff; // Ou a cor desejada ao passar o mouse
+    }
   }
 `;
 
