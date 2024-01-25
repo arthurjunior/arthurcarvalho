@@ -1,15 +1,15 @@
 const projects = [
   {
     id: 1,
-    url: "https://shop-cart-xi.vercel.app/",
+    url: "https://github.com/arthurjunior/Orgs",
     img: "/projects/shop-cart/bannerShopCart.png",
-    title: "E-comerce ",
+    title: "Feirinha Livre ",
     type: "App Android",
     icon: "",
-    github: "https://github.com/LSB30/shop-cart",
-    web: "https://shop-cart-xi.vercel.app/",
+    github: "https://github.com/arthurjunior/Orgs",
+    web: "https://github.com/arthurjunior/Orgs",
     description:
-      "Mercado Pago, consumindo API do Mercado livre, simulando um site de compras. ",
+      "Aplicativo android com CRUD de e-comerce de Feira de frutas e legumes ",
     tags: [
       
     ],
