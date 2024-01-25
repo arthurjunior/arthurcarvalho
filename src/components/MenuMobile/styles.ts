@@ -29,12 +29,20 @@ export const NavMenu = styled.nav<Click>`
     }
 
     li {
-      margin-bottom: 10px;
-      font-size: 18px;
-      // Adicione mais estilos conforme necessário
-    }
-    &:hover {
-      color: #007bff; // Ou a cor desejada ao passar o mouse
+      margin-bottom: 15px; /* Aumentei o espaçamento entre os itens */
+      font-size: 20px; /* Aumentei o tamanho da fonte */
+      letter-spacing: 1px; /* Adicionei espaçamento entre as letras */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionei sombreamento */
+      transition: color 0.3s ease-in-out;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: #007bff;
+        }
+      }
     }
   }
 `;
