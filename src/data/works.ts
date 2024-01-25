@@ -9,10 +9,10 @@ const works = [
       "Como desenvolvedor mobile autônomo na plataforma Workana LLC, destaco minha expertise na criação de aplicativos intuitivos, especialmente em projetos que envolvem operações CRUD (Create, Read, Update, Delete) e integrações com APIs. Ao utilizar minha habilidade técnica, desenvolvi soluções eficientes para atender às necessidades específicas dos clientes.",
     tags: [
    
-      { name: "Css", icon: "/skills/java.svg" },
-      { name: "JavaScript", icon: "/skills/android-studio.svg" },
-      { name: "TypeScript", icon: "/skills/kotlin(1).svg" },
-      { name: "React JS", icon: "/skills/firebase-icon.svg" },
+      { name: "java", icon: "/skills/java.svg" },
+      { name: "JAndroid Studio", icon: "/skills/android-studio.svg" },
+      { name: "TKotlin", icon: "/skills/kotlin(1).svg" },
+      { name: "Fire Base", icon: "/skills/firebase-icon.svg" },
      
     ],
     date: "janeiro 2021 - Presente",
@@ -32,7 +32,8 @@ const works = [
       { name: "SAP", icon: "/skills/oracle.svg" },
       { name: "Access", icon: "/skills/office.svg" },
       { name: "Power Bi", icon: "/skills/csharp.png" },
-      { name: "Power Point", icon: "/skills/powerpoint.svg" },
+      { name: "Android Studio", icon: "/skills/android-studio.svg" },
+      { name: "TKotlin", icon: "/skills/kotlin(1).svg" },
     ],
     date: "abril 2023 - novembro 2023",
   },
