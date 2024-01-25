@@ -29,18 +29,19 @@ export const NavMenu = styled.nav<Click>`
     }
 
     li {
-      margin-bottom: 15px; /* Aumentei o espaçamento entre os itens */
-      font-size: 20px; /* Aumentei o tamanho da fonte */
-      letter-spacing: 1px; /* Adicionei espaçamento entre as letras */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionei sombreamento */
+      margin-bottom: 15px;
+      font-size: 28px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(138, 43, 226, 0.8); /* Roxo para efeito neon */
       transition: color 0.3s ease-in-out;
 
       a {
         text-decoration: none;
-        color: inherit;
+        color: #fff; /* Branco para o texto */
+        transition: color 0.3s ease-in-out;
 
         &:hover {
-          color: #007bff;
+          color: #8a2be2; /* Roxo ao passar o mouse */
         }
       }
     }
@@ -60,8 +61,14 @@ export const MobileIcon = styled.div`
     z-index: 20;
 
     > svg {
-      color: rgb(226, 232, 240);
+      color: #8a2be2; /* Roxo para o ícone */
       transition: color 0.5s ease-in-out;
+    }
+
+    &:hover {
+      > svg {
+        color: #fff; /* Branco ao passar o mouse */
+      }
     }
   }
 `;
