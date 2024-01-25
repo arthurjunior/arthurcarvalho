@@ -72,7 +72,7 @@ export const ProjectsContent = styled.div`
   
     &:hover {
       opacity: 1;
-      height: 100%;
+      height: 22%;
     }
   
     h2 {
@@ -80,7 +80,7 @@ export const ProjectsContent = styled.div`
       font-size: 2.5rem;
       text-align: center;
       color: #8485f6;
-      filter: drop-shadow(5px 5px 5px black);
+      filter: none;
       margin-bottom: 0.5rem;
     }
   
@@ -103,8 +103,14 @@ export const ProjectsContent = styled.div`
       height: 2rem;
       border-radius: 50%;
     }
+  
+    .btns {
+      .ButtonProject {
+        box-shadow: none;
+      }
+    }
   }
-
+  
   .telemovel {
     width: 8rem;
     padding-top: 5rem;
@@ -112,7 +118,7 @@ export const ProjectsContent = styled.div`
     right: 2rem;
     top: 0.5rem;
   }
-
+  
   @media (min-width: 1300px) {
     max-width: 45rem;
   }
