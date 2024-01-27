@@ -49,6 +49,7 @@ Sinta-se à vontade para sugerir melhorias, reportar problemas ou contribuir par
 - **Nome:** Arthur Junior
 - **E-mail:** dev.arthurcarvalho@gmail.com
 - **LinkedIn:**(https://www.linkedin.com/in/devarthur/)
+- 
 
 
 Obrigado por visitar meu portfólio! Espero que goste do que viu. 😊
